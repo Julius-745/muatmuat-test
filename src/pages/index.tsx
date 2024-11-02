@@ -2,9 +2,11 @@ import { Layout  } from "@/components/"
 import { Card, Search, Modal } from "@/components/ui";
 import { Product } from "@/constanst";
 import { useSearchData } from "@/hooks";
+// import { useFetchData } from "@/hooks/useFetchData";
 
 export default function Home() {
   const {data, isLoading, setSearch} = useSearchData();
+  // const {data: pokemonData, isLoading: pokemonLoading} = useFetchData();
 
   return (
     <Layout>
